@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+                app:title="Orders"
+                app:titleTextColor="@color/white"
+                android:id="@+id/toolbar_order"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/blue"
+                app:popupTheme="@style/PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Tap To Refresh Available Orders"
+                android:id="@+id/tv_orderList"/>
+
+        <ProgressBar
+                android:layout_gravity="center"
+                android:id="@+id/order_get_order_progress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/swipe_refresh_order">
+
+            <android.support.v7.widget.RecyclerView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/recyclerView_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

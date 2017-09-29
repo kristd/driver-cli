@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_driver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:textSize="18dp"
+                android:id="@+id/driver_name"
+                android:maxLines="1"
+                android:layout_margin="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:  Davron Adilov"/>
+        <TextView
+                android:textSize="18dp"
+                android:layout_margin="1dp"
+                android:text="Phone:  7188393727"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/driver_phone"
+                android:layout_weight="1"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+            <TextView
+                    android:textSize="18dp"
+                    android:layout_margin="1dp"
+                    android:text="Status:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/driver_status_label"/>
+            <Switch
+                    android:layout_margin="1dp"
+                    android:clickable="true"
+                    android:textOn="Online"
+                    android:textOff="Offline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/driver_status"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

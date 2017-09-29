@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+                app:title="Reports"
+                app:titleTextColor="@color/white"
+                android:id="@+id/toolbar_report"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/blue"
+                app:popupTheme="@style/PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:text="          Date Period     1900/01/01-2017/01/01"
+                android:id="@+id/report_date_period"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:text="          Total Orders    0"
+                android:id="@+id/report_total_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:text="          Total Tips        $0"
+                android:id="@+id/report_total_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/tv_reportDates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="40dp"
+                android:text="Tap To Select Report Dates"/>
+
+        <ProgressBar
+                android:layout_gravity="center"
+                android:id="@+id/report_get_report_progress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"/>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/swipe_refresh_report">
+
+            <android.support.v7.widget.RecyclerView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/recyclerView_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

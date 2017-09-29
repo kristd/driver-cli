@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="4dp">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:id="@+id/order_last5code"
+                android:maxLines="1"
+                android:layout_margin="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="198"/>
+        <TextView
+                android:maxLines="2"
+                android:textSize="14sp"
+                android:layout_margin="1dp"
+                android:text="四川人家 Little Szechuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_rest_name"
+                android:layout_weight="1"/>
+
+        <LinearLayout
+                android:layout_marginTop="1dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_marginTop="1dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="Address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/order_address_label"
+                    android:layout_weight="1"/>
+
+            <TextView
+                    android:maxLines="2"
+                    android:textSize="14sp"
+                    android:layout_marginTop="1dp"
+                    android:text="564,Leete Hall, State College, PA 16803, USA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/order_address"
+                    android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_marginTop="1dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:text="Customer Info"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:id="@+id/order_customer_info_lable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:textSize="14sp"
+                    android:layout_margin="1dp"
+                    android:text="Vincent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/order_customer_name"
+                    android:layout_weight="1"/>
+
+            <TextView
+                    android:textSize="14sp"
+                    android:layout_margin="1dp"
+                    android:text="18620904899"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/order_customer_phone"
+                    android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+        <Button
+                android:id="@+id/order_operator_btn"
+                android:textStyle="bold"
+                android:text="ACCEPT"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

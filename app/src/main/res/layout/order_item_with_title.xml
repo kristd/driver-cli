@@ -8,10 +8,10 @@
             android:id="@+id/base_swipe_group_item_time"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:gravity="center_vertical"
             android:textSize="15sp" />
 
-    <include layout="@layout/order_item"></include>
+    <include layout="@layout/order_item"/>
 
 </LinearLayout>

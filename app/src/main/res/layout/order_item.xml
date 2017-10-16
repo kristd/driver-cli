@@ -12,7 +12,7 @@
 
     <LinearLayout
             android:orientation="vertical"
-            android:gravity="left"
+            android:gravity="start"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -24,14 +24,14 @@
                 android:layout_margin="1dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="198"/>
+                android:text=""/>
         <TextView
                 android:maxLines="2"
                 android:textSize="14sp"
                 android:layout_margin="1dp"
-                android:text="四川人家 Little Szechuan"
+                android:text=""
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:id="@+id/order_rest_name"
                 android:layout_weight="1"/>
 
@@ -55,7 +55,7 @@
                     android:maxLines="2"
                     android:textSize="14sp"
                     android:layout_marginTop="1dp"
-                    android:text="564,Leete Hall, State College, PA 16803, USA"
+                    android:text=""
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/order_address"
@@ -80,7 +80,7 @@
             <TextView
                     android:textSize="14sp"
                     android:layout_margin="1dp"
-                    android:text="Vincent"
+                    android:text=""
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/order_customer_name"
@@ -89,7 +89,7 @@
             <TextView
                     android:textSize="14sp"
                     android:layout_margin="1dp"
-                    android:text="18620904899"
+                    android:text=""
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/order_customer_phone"

@@ -3,7 +3,7 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              android:gravity="center"
-             tools:context="com.app.onemenu.InfoFragment">
+             tools:context="com.onemenu.driver.InfoFragment">
 
     <android.support.design.widget.AppBarLayout
             android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
                 android:layout_height="match_parent">
 
             <TableRow android:layout_margin="50dp" android:layout_width="match_parent"
-                      android:layout_height="match_parent"></TableRow>
+                      android:layout_height="match_parent"/>
             <TableRow android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
                 <de.hdodenhof.circleimageview.CircleImageView
                         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -56,9 +56,8 @@
                         android:layout_height="wrap_content" android:id="@+id/info_name_label"/>
                 <TextView
                         android:textSize="20sp"
-                        android:gravity="left"
+                        android:gravity="start"
                         android:layout_margin="10dp"
-                        android:text="Joe Smith"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/info_username"/>
             </TableRow>
@@ -73,9 +72,8 @@
                         android:layout_height="wrap_content" android:id="@+id/info_phone_label"/>
                 <TextView
                         android:textSize="20sp"
-                        android:gravity="left"
+                        android:gravity="start"
                         android:layout_margin="10dp"
-                        android:text="13902089526"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" android:id="@+id/info_phone"/>
             </TableRow>

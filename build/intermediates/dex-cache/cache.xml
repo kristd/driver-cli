@@ -2,85 +2,301 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/Users/kristd/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.9.0/1b6c10b5120995a7542c1a31b7828fb8593c8ba/okhttp-3.9.0.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/8b032aa8fa1bd58fa1fcfc87ef8cf51460078fc4/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="01b6c10b5120995a7542c1a31b7828fb8593c8ba">
-        <dex dex="/Users/kristd/Documents/intelliJ/onemenu/app/build/intermediates/pre-dexed/debug/okhttp-3.9.0_901ffe497a29bb55208b05791201ebb8dfd2cbc1.jar" />
+        sha1="e5b429c146094a612134910688d169ec08deeefb">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_363a1115c3dbb63952eaeb5f704899e6e49d61d6/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/kristd/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
-        <dex dex="/Users/kristd/Documents/intelliJ/onemenu/app/build/intermediates/pre-dexed/debug/glide-3.7.0_fa858a8bd7175ab18f28e9364f69cb979655f356.jar" />
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_38fd31ff593de488f47d175fbccfe032af424752/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/kristd/.gradle/caches/modules-2/files-2.1/org.greenrobot/eventbus/3.0.0/ddd99896e9569eaababbe81b35d80e1b91c4ad85/eventbus-3.0.0.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/899ec313f967900ac2683d48c85a00dc3ba955e0/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="ddd99896e9569eaababbe81b35d80e1b91c4ad85">
-        <dex dex="/Users/kristd/Documents/intelliJ/onemenu/app/build/intermediates/pre-dexed/debug/eventbus-3.0.0_f29ca1ddb549a993b4b83d09a4b42288393919f0.jar" />
+        sha1="f47f4d5bdfd7d7bf330945b8a7ccce4ab437a710">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2e8bea9da04d6c2ada50ff43d76538a22b23e862/classes.dex" />
     </item>
     <item
-        is-multidex="false"
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/1b3f0298eba82931a69ec423a98e59f63bc24b50/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9c78408067ae5db286adb95807dbb9823c155f3a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/kristd/.android/build-cache/1473d1a05f02f9822f207144207f2076c34dad72/output/jars/classes.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="914f5d3e3ace66080e59613708f06d129a222e25">
-        <dex dex="/Users/kristd/Documents/intelliJ/onemenu/app/build/intermediates/pre-dexed/debug/classes_43c6b78a88e71df0167a31c20c119b36515c3e1f.jar" />
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_43c6b78a88e71df0167a31c20c119b36515c3e1f/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/kristd/.android/build-cache/1a901396a7047f918fd6786096e0e9ce230ad717/output/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/16c8733b9efc44129ab0eaf657fc3edcbafe6a12/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="f40cf334cdc8b098b74312e21c7741c6eefbeb0e">
-        <dex dex="/Users/kristd/Documents/intelliJ/onemenu/app/build/intermediates/pre-dexed/debug/classes_d3c388c3bbab34be059708ff01c163e8659926f6.jar" />
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ee3fe5a9259c1905c133f5819e85a2c04113b6e0/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/kristd/.android/build-cache/741d641c98a228dd47fee9df192aff650278cd70/output/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/5988f1ebbbf9208cd5d150a5271ec1150e667c13/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
-        <dex dex="/Users/kristd/Documents/intelliJ/onemenu/app/build/intermediates/pre-dexed/debug/classes_3ba08ab0b91bdccc797f0fa6cd02d038737eef7b.jar" />
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7726f9405c32e3c41db6bd0d8bb5275af3289945/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/kristd/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/kristd/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="/Users/kristd/Documents/intelliJ/onemenu/app/build/intermediates/pre-dexed/debug/okio-1.13.0_fc5c40c87779c83fcb99f52fb4fa1a67498d4dcb.jar" />
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.7.0_fa858a8bd7175ab18f28e9364f69cb979655f356/classes.dex" />
     </item>
     <item
-        is-multidex="false"
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/8c9798c1375a4a8ba59c2fe480d925dd66518b56/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e1625e48a836779b5fa141d22e5d05563aaccc9a">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_75def568885a82f29838ffcf5c0d822f79de3ab9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/6b7eafe96158a8dd6e0e45de069c03242c4df9c1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b4ba12df2fe5d20394a5e2ac5eeef508432b69e2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/4ba84d3d7d7cb49201811417cc6f9b9039790f7a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="43e9789bd3240271265ab30ce1be9f224843f5a8">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c730086b539c12c3d052894b9b2981a2796756e3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kristd/Documents/android/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_829109544e91dce87070e94dfd98025ba9eb9b6a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/kristd/.gradle/caches/modules-2/files-2.1/com.alibaba/fastjson/1.1.63.android/93761d9f88f4336d6dcecc273c4f4b490238dc0/fastjson-1.1.63.android.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="093761d9f88f4336d6dcecc273c4f4b490238dc0">
-        <dex dex="/Users/kristd/Documents/intelliJ/onemenu/app/build/intermediates/pre-dexed/debug/fastjson-1.1.63.android_76cc25ed73c530812617d6737ad5fb41a5f60a27.jar" />
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/fastjson-1.1.63.android_76cc25ed73c530812617d6737ad5fb41a5f60a27/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/kristd/.android/build-cache/a95a0c4cb6704fcbf1a64e97315c6132a87a7e50/output/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/3161b162b2ab6d1a04198b967baab51de1cb2162/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a28795c6951b9105cba9f77a561f8613af0143c8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/1103e6013fa976fa6b1717b97a9f77d74476261e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9e59a17d22b61a19f00fa25f521812cf0a7c50a9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/10ec66be699b4364b8c60bbfe3d9c7c8dccbb3f3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4c80fbecf8fe35c48a49474c3ceb438a2ce434eb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/b738aaabf2496646ffa0fbf53e06fa691eb3ae15/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_33c3c084779540013d618192b03661625572bfa4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/51c7e36355820be0884050ac770eea071b470b65/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8b9b633ccf98ab93a576b84a379c1af6ec8e707f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/0a7ce6e74cda86217bd15037f7aaa5d5456f1265/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ddebd644d0a5999ac3cf321d152669d3fa2b3a98/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2c30eb9c110e29e13d2d40c2c7290787b4159025">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_a681f72fbf69cfc27987c2c5b4b74f1e76074f51/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kristd/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.9.0/1b6c10b5120995a7542c1a31b7828fb8593c8ba/okhttp-3.9.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="01b6c10b5120995a7542c1a31b7828fb8593c8ba">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.9.0_901ffe497a29bb55208b05791201ebb8dfd2cbc1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/2276af6fa31e98674fa1189cd57439f2335d9552/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ed87ccdcb70c17d71ba4e6e4ac16afa62d3c49fb">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f07bab72fb75844785680336ed18aca04e349c4a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/89b4f2b47476af7d4c8b4524fe396b35ebd546c2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2bc9da5e020a1711a6bec856ff902dd5f448413f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kristd/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.13.0_fc5c40c87779c83fcb99f52fb4fa1a67498d4dcb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/edaa699054aeec811245423f3768eaaac9f48b07/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e0c47f9f7aabb95d0551693705ae7c61d4a38f47/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/3e169c0de5ef983bd472573d6c465ef387730092/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_74a266ba03a9d5b12c0ddbe4bb5836f4cdca69d1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/172086366467d41ba2f0b1d70f533ef63d400aee/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e517211620ab610952c1c6ef3be51ee67d4ff419/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/f074522c76905139656869f35606da7430251938/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d05df7e91dec4a6351353df5f1daaa3e272f5112/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kristd/Documents/android/android-sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_1efa0a0cfe516d35dcbd782f54d31d8d67c35208/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/b893aaa23f317c776a74542e353357839abb1d39/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f029de215fb79b8c6d9511269df2650e1c30c91b">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_54d111e4a41cc36de88f66b0fe84e9d46553b650/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/08eeea398673f910100a62a68f20873b0acfd74d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f40cf334cdc8b098b74312e21c7741c6eefbeb0e">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_500de072cf5fa25b6448622185f3797b8fee022c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/9ea99bc6d39fb99bbf42f17c0505e2f28dfaed03/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e431be1f1829c621d6cd8af77d09816c0f19064e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/kristd/.android/build-cache/e58cced34b1fbddf02699d46f7dfd55c601da7f0/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="ccbe963151b20154ac7de09df749e9ed51fe92cc">
-        <dex dex="/Users/kristd/Documents/intelliJ/onemenu/app/build/intermediates/pre-dexed/debug/classes_2b86127ddf4cb1a00d5dc01ec727f29281d70aae.jar" />
+        <dex dex="/Users/kristd/Documents/intelliJ/onemenu-driver/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0ba594a643a0439150bc0694ee37929bf35924c3/classes.dex" />
     </item>
 
 </items>

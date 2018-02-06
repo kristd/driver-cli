@@ -326,11 +326,21 @@ public class OrderRecyclerViewAdapter extends RecyclerView.Adapter<OrderRecycler
                     dialog.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
                     dialog.show();
                 } else if (viewHolder.opreratr_button.getText().toString().equals("FINISH")) {
-                    Map<String, String> values = new ConcurrentHashMap();
-                    values.put("order_id", orders.get(index).getId());
-                    JSONObject params = JSONObject.parseObject(JSON.toJSONString(values));
-                    showProgHandler.sendMessage(new Message());
-                    HttpApi.NewRequest(HttpApi.POST, HttpApi.ServerApi.FINISH_ORDER, finishOrderCallback, params);
+                    AlertDialog dialog = new AlertDialog.Builder(context)
+                            .setMessage("finish this order?")
+                            .setPositiveButton("FINISH", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    Map<String, String> values = new ConcurrentHashMap();
+                                    values.put("order_id", orders.get(index).getId());
+                                    JSONObject params = JSONObject.parseObject(JSON.toJSONString(values));
+                                    showProgHandler.sendMessage(new Message());
+                                    HttpApi.NewRequest(HttpApi.POST, HttpApi.ServerApi.FINISH_ORDER, finishOrderCallback, params);
+                                }
+                            })
+                            .setNegativeButton("CANCEL" ,  null )
+                            .create();
+                    dialog.show();
                 }
             }
         });

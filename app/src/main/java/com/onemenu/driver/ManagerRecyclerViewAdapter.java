@@ -128,7 +128,7 @@ public class ManagerRecyclerViewAdapter extends RecyclerView.Adapter<ManagerRecy
         CardView mgr_order_cardView;
         TextView manager_last5code;
         TextView manager_rest_name;
-        TextView manger_rest_address;
+        TextView manger_user_address;
         TextView manager_driver_name;
         TextView manager_driver_phone;
         ImageView manager_imagebtn;
@@ -145,7 +145,7 @@ public class ManagerRecyclerViewAdapter extends RecyclerView.Adapter<ManagerRecy
             mgr_order_cardView = (CardView) itemView.findViewById(R.id.card_view_mgr_order);
             manager_last5code = (TextView) itemView.findViewById(R.id.manager_last5code);
             manager_rest_name = (TextView) itemView.findViewById(R.id.manager_rest_name);
-            manger_rest_address = (TextView) itemView.findViewById(R.id.manger_rest_address);
+            manger_user_address = (TextView) itemView.findViewById(R.id.manger_user_address);
             manager_driver_name = (TextView) itemView.findViewById(R.id.manager_driver_name);
             manager_driver_phone = (TextView) itemView.findViewById(R.id.manager_driver_phone);
             manager_imagebtn = (ImageView) itemView.findViewById(R.id.manager_imagebtn);
@@ -266,7 +266,7 @@ public class ManagerRecyclerViewAdapter extends RecyclerView.Adapter<ManagerRecy
 
         viewHolder.manager_last5code.setText(orders.get(index).getLast5Code());
         viewHolder.manager_rest_name.setText(orders.get(index).getRestaurant().getName());
-        viewHolder.manger_rest_address.setText(orders.get(index).getRestaurant().getLocation().getAddress());
+        viewHolder.manger_user_address.setText(orders.get(index).getCustomerLocation().getAddress());
         if (orders.get(index).getDriver() != null) {
             viewHolder.manager_driver_name.setText(orders.get(index).getDriver().getName());
             viewHolder.manager_driver_phone.setText(orders.get(index).getDriver().getPhone());

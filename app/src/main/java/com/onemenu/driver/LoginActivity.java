@@ -36,6 +36,8 @@ import okhttp3.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * A login screen that offers login via email/password.
@@ -60,6 +62,27 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
+    private Button mEmailSignInButton;
+
+    Callback updateNotifyTokenCallback = new Callback() {
+        @Override
+        public void onFailure(Call call, IOException e) {
+            Log.i(TAG, "update notify token failed");
+        }
+
+        @Override
+        public void onResponse(Call call, Response response) throws IOException {
+            String data = response.body().string();
+            Log.i(TAG, data);
+
+            JSONObject jsonObject = (JSONObject) JSON.parse(data);
+            if (jsonObject != null && jsonObject.getString("status").equals(ErrorCode.Success)) {
+                Log.i(TAG, "update notify token success");
+            } else {
+                Log.i(TAG, "update notify token failed");
+            }
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,7 +111,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
             }
         });
 
-        Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
+        mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -100,10 +123,10 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
         mProgressView = findViewById(R.id.login_progress);
 
         //Try auto-login
-        loginPref = getSharedPreferences("LOGIN", MODE_PRIVATE);
+        loginPref = getSharedPreferences("DRIVER_LOGIN", MODE_PRIVATE);
         loginEditor = loginPref.edit();
-        if (loginPref != null) {
-            Log.i(TAG, "AUTO LOGIN");
+        if (!loginPref.getString("token", "").equals("")) {
+            Log.i(TAG, "TRY AUTO LOGIN");
             autoLogin();
         }
     }
@@ -130,6 +153,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
      */
     private void attemptLogin() {
         if (mAuthTask != null) {
+            Log.i(TAG, "mAuthTask is not null");
             return;
         }
 
@@ -328,6 +352,8 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
         loginEditor.putInt("driver_type", User.getInstant().getType());
         // 提交数据修改
         loginEditor.commit();
+
+        User.getInstant().setLoginStat(true);
     }
 
     public class UserReLoginTask extends AsyncTask<Void, Void, Boolean> {
@@ -364,10 +390,12 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
             showProgress(false);
 
             if (success) {
-                Log.i(TAG, "LOGIN SUCCESS");
+                Log.i(TAG, "AUTO LOGIN SUCCESS");
+
+                updateNotifyToken();
+
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
-
                 finish();
             } else {
                 mEmailView.requestFocus();
@@ -424,6 +452,8 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
             if (success) {
                 Log.i(TAG, "LOGIN SUCCESS");
 
+                updateNotifyToken();
+
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
@@ -448,6 +478,15 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
 
         Log.d(TAG, "Notify token: " + notifyToken);
         return notifyToken;
+    }
+
+    private void updateNotifyToken() {
+        if (User.getInstant().getNotiToken() != null) {
+            Map<String, String> values = new ConcurrentHashMap();
+            values.put("notification_token", User.getInstant().getNotiToken());
+            JSONObject params = JSONObject.parseObject(JSON.toJSONString(values));
+            HttpApi.NewRequest(HttpApi.POST, HttpApi.ServerApi.UPDATE_NOTIFY_TOKEN, updateNotifyTokenCallback, params);
+        }
     }
 }
 

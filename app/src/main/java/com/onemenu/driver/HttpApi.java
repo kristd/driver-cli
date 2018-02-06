@@ -407,6 +407,7 @@ public class HttpApi {
         RequestBody body = new FormBody.Builder()
                 .add("notification_token", params.getString("notification_token"))
                 .build();
+
         return new Request.Builder().url(sServerAddr + sUpdNotifyToken)
                 .header("useragent", "android")
                 .header("login_token", User.getInstant().getToken()).post(body).build();

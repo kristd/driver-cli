@@ -215,16 +215,16 @@ public class MainActivity extends FragmentActivity implements BottomNavigationBa
         return location;
     }
 
-    private void updateNotifyToken() {
-        String refreshedToken = FirebaseInstanceId.getInstance().getToken();
-        if (refreshedToken == null) {
-            refreshedToken = "";
-        }
-        Log.d(TAG, "Refreshed token: " + refreshedToken);
-
-        Map<String, String> values = new ConcurrentHashMap();
-        values.put("notification_token", refreshedToken);
-        JSONObject params = JSONObject.parseObject(JSON.toJSONString(values));
-        HttpApi.NewRequest(HttpApi.POST, HttpApi.ServerApi.UPDATE_NOTIFY_TOKEN, updateNotifyTokenCallback, params);
-    }
+//    private void updateNotifyToken() {
+//        String refreshedToken = FirebaseInstanceId.getInstance().getToken();
+//        if (refreshedToken == null) {
+//            refreshedToken = "";
+//        }
+//        Log.d(TAG, "Refreshed token: " + refreshedToken);
+//
+//        Map<String, String> values = new ConcurrentHashMap();
+//        values.put("notification_token", refreshedToken);
+//        JSONObject params = JSONObject.parseObject(JSON.toJSONString(values));
+//        HttpApi.NewRequest(HttpApi.POST, HttpApi.ServerApi.UPDATE_NOTIFY_TOKEN, updateNotifyTokenCallback, params);
+//    }
 }

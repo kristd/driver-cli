@@ -2,6 +2,7 @@ package com.onemenu.driver;
 
 
 import java.io.Serializable;
+import java.sql.Struct;
 
 public class User implements Serializable {
     private int mStatus;
@@ -12,18 +13,37 @@ public class User implements Serializable {
     private String mId;
     private int mType;
     private Avatar mAvatar;
+    private boolean isLogin;
+    private String notiToken;
 
     private static User mInstant;
 
-    static public void init() {}
+
 
     static public void init(String phone, String passwd, String token, int stat, String name, String id, Avatar avatar, int type) {
-        mInstant = new User(phone, passwd, token, stat, name, id, avatar, type);
+        if (mInstant != null) {
+            mInstant.setPhone(phone);
+            mInstant.setPasswd(passwd);
+            mInstant.setToken(token);
+            mInstant.setStatus(stat);
+            mInstant.setName(name);
+            mInstant.setId(id);
+            mInstant.setAvatar(avatar);
+            mInstant.setType(type);
+        } else {
+            mInstant = new User(phone, passwd, token, stat, name, id, avatar, type);
+        }
     }
 
     static public User getInstant() {
+        if (mInstant == null) {
+            mInstant = new User();
+        }
+
         return mInstant;
     }
+
+    private User() {}
 
     private User(String phone, String passwd, String token, int stat, String name, String id, Avatar avatar, int type) {
         mPhone = phone;
@@ -107,5 +127,21 @@ public class User implements Serializable {
 
     public int getType() {
         return mType;
+    }
+
+    public void setLoginStat(boolean stat) {
+        this.isLogin = stat;
+    }
+
+    public boolean getLoginStat() {
+        return this.isLogin;
+    }
+
+    public void setNotiToken(String notiToken) {
+        this.notiToken = notiToken;
+    }
+
+    public String getNotiToken() {
+        return notiToken;
     }
 }

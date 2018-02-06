@@ -131,7 +131,6 @@ public class OrderFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-
         pView.VIEW = getActivity().findViewById(R.id.order_get_order_progress);
 
         layoutManager = new LinearLayoutManager(getActivity());

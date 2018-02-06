@@ -16,26 +16,6 @@ import java.util.concurrent.ConcurrentHashMap;
 public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
     private static final String TAG = "MyFirebaseIIDService";
 
-    Callback updateNotifyTokenCallback = new Callback() {
-        @Override
-        public void onFailure(Call call, IOException e) {
-            Log.i(TAG, "update notify token failed");
-        }
-
-        @Override
-        public void onResponse(Call call, Response response) throws IOException {
-            String data = response.body().string();
-            Log.i(TAG, data);
-
-            JSONObject jsonObject = (JSONObject) JSON.parse(data);
-            if (jsonObject != null && jsonObject.getString("status").equals(ErrorCode.Success)) {
-                Log.i(TAG, "update notify token success");
-            } else {
-                Log.i(TAG, "update notify token failed");
-            }
-        }
-    };
-
     /**
      * Called if InstanceID token is updated. This may occur if the security of
      * the previous token had been compromised. Note that this is called when the InstanceID token
@@ -68,10 +48,6 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
      */
     private void sendRegistrationToServer(String token) {
         // TODO: Implement this method to send token to your app server.
-        Map<String, String> values = new ConcurrentHashMap();
-        values.put("notification_token", token);
-        JSONObject params = JSONObject.parseObject(JSON.toJSONString(values));
-
-        HttpApi.NewRequest(HttpApi.POST, HttpApi.ServerApi.UPDATE_NOTIFY_TOKEN, updateNotifyTokenCallback, params);
+        User.getInstant().setNotiToken(token);
     }
 }

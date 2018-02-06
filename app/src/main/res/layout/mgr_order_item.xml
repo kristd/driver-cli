@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clickable="true"
-        android:layout_margin="2dp"
+        android:layout_margin="8dp"
         app:cardCornerRadius="5dp"
         app:cardElevation="4dp">
 
@@ -46,7 +46,7 @@
                     android:text="Address"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/manager_rest_address_label"
+                    android:id="@+id/manager_user_address_label"
                     android:layout_weight="1"/>
 
             <TextView
@@ -55,7 +55,7 @@
                     android:layout_marginTop="1dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/manger_rest_address"
+                    android:id="@+id/manger_user_address"
                     android:layout_weight="1"/>
 
         </LinearLayout>
